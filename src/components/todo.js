@@ -1,14 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/planner.css"
+import "../styles/todo.css"
+import Addtodo from './components/Addtodo'
+import Todos from './components/Todos'
+import {Provider} from './context'
 
-class Expense extends React.Component {
+
+class Todo extends React.Component {
   render() {
     return (
-        <div id="heading">
+        <Provider>
+        <div id="heading" className = "app-container">
           <h1 style={{color:"wheat",marginTop:"10px",fontSize:"38px"}}>To-Do List</h1>
+          <Addtodo></Addtodo>
+          <Todos></Todos>
         </div>
+        </Provider>
     );
   }
 }
-export default Expense;
+export default Todo;
