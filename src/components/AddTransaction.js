@@ -23,7 +23,7 @@ export const AddTransaction = () => {
     <>
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
-        <div className="form-control">
+        <div class="form-group">
           <label htmlFor="text">Text</label>
           <input
             type="text"
@@ -32,7 +32,7 @@ export const AddTransaction = () => {
             placeholder="Enter text..."
           />
         </div>
-        <div className="form-control">
+        <div class="form-group">
           <label htmlFor="amount">
             Amount <br />
             (negative - expense, positive - income)
