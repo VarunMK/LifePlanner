@@ -14,9 +14,9 @@ class Nav extends React.Component {
                     </div>
                     <div class="right">
                         <li>
-                            <Link to="/todo">To-Do List</Link>
-                            <Link to="/expense">Expense Calculator</Link>
-                            <Link to="/timetable">Time Table</Link>
+                            <Link to="/todo">Todo List</Link>
+                            <Link to="/expense">Expense Tracker</Link>
+                            <Link to="/pomodoro">Pomodoro</Link>
                         </li>
                     </div>
                 </ul>

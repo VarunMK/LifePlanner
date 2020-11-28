@@ -8,7 +8,7 @@ import {
   HashRouter,
 } from "react-router-dom";
 import { Provider } from "react-redux";
-import timetable from "./components/timetable";
+import pomodoro from "./components/pomodoro";
 import planner from "./components/planner";
 import expense from "./components/expense";
 import todo from "./components/todo";
@@ -37,7 +37,7 @@ function App() {
       <Nav/>
       <Route path="/" exact component={planner} />
       <Route path="/todo" exact component={todo} />
-      <Route path="/timetable" exact component={timetable} />
+      <Route path="/pomodoro" exact component={pomodoro} />
       <Route path="/expense" exact component={expense} />
     </HashRouter>
   );
