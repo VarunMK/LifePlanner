@@ -1,15 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/planner.css"
+import { Balance } from "./Balance";
+import { IncomeExpenses } from "./IncomeExpenses";
+import { TransactionList } from "./TransactionList";
+import { AddTransaction } from "./AddTransaction";
 
-class Expense extends React.Component {
-  render() {
-    return (
-        <div id="heading">
-          <h1 style={{color:"wheat",marginTop:"10px",fontSize:"38px"}}>Expenses</h1>
+import { GlobalProvider } from "../context/GlobalState";
+import "../styles/planner.css";
+function expense() {
+  return (
+    <div>
+      <GlobalProvider>
+        <div className="container">
+          <Balance />
+          <IncomeExpenses />
+          <TransactionList />
+          <AddTransaction />
         </div>
-    );
-  }
+      </GlobalProvider>
+    </div>
+  );
 }
 
-export default Expense;
+export default expense;
