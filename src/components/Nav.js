@@ -13,11 +13,10 @@ class Nav extends React.Component {
                         </li>
                     </div>
                     <div class="right">
-                        <li>
-                            <Link to="/todo">To-Do List</Link>
-                            <Link to="/expense">Expense Calculator</Link>
-                            <Link to="/timetable">Time Table</Link>
-                        </li>
+                            <Link to="/todo" style={{textDecoration:"none"}}>Todo List</Link>
+                            <Link to="/expense" style={{textDecoration:"none"}}>Expense Tracker</Link>
+                            <Link to="/pomodoro" style={{textDecoration:"none"}}>Pomodoro</Link>
+                            <Link to="/settings" style={{textDecoration:"none"}}>Settings</Link>
                     </div>
                 </ul>
             </header>
