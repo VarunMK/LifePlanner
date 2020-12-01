@@ -11,7 +11,7 @@ class Todo extends React.Component {
     return (
         <Provider>
         <div id="heading" className = "app-container">
-          <h1 style={{color:"wheat",marginTop:"10px",fontSize:"38px"}}>To-Do List</h1>
+          <h1 style={{color:"wheat",marginTop:"10px",fontSize:"50px"}}>To-Do List</h1>
           <Addtodo></Addtodo>
           <Todos></Todos>
         </div>
