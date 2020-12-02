@@ -9,6 +9,7 @@
     "antd": "^4.8.2",
     "bootstrap": "^4.5.3",
     "history": "^5.0.0",
+    "mongoose": "^5.11.1",
     "particlesjs": "^2.2.3",
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
