@@ -21,7 +21,7 @@ export default class Todo extends Component{
       <Consumer>{value => {
         const { dispatch } = value
         return <h3 className="text-dark text-center p-1 bg-light border-bottom font-weight-light" style = {this.style()}>
-        <i className = "far fa-times-circle fa-sm float-left m-1 text-danger" onClick={this.remove.bind(this, _id, dispatch)}></i>{title}
+        <i className = "fas fa-trash fa-sm float-left m-1 text-info" onClick={this.remove.bind(this, _id, dispatch)}></i>{title}
         <input type="checkbox" className="m-2 float-right" onChange={this.toggle.bind(this,
         _id, dispatch)}/>
         </h3>
