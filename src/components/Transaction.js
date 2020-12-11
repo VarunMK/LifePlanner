@@ -15,6 +15,7 @@ export const Transaction = ({ transaction }) => {
       <button
         onClick={() => deleteTransaction(transaction.id)}
         className="delete-btn"
+        style={{textAlign:"12px 0"}}
       >
         x
       </button>

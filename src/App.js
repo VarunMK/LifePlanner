@@ -43,7 +43,7 @@ function App() {
         <Route path="/todo" exact component={todo} />
         <Route path="/pomodoro" exact component={timer} />
         <Route path="/expense" exact component={expense} />
-        <Route path="/settings" exact component={settings} />
+        {/* <Route path="/settings" exact component={settings} /> */}
         </Content>
       </HashRouter>
     </Layout>

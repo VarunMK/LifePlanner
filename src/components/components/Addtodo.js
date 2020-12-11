@@ -26,8 +26,8 @@ export default class Addtodo extends Component {
         const {dispatch}  = value
         return <form onSubmit={this.add.bind(this, dispatch)}>
           <input type="text" className="form-control form-control-lg rounded-0" placeholder="Enter task here" onChange={this.update}
-          value = {this.state.title}/>
-          <button className="form-control form-control-lg rounded-0 btn-info btn-outline-black" type="submit">Add</button>
+          value = {this.state.title} required/>
+          <button className="form-control form-control-lg rounded-0 btn-info btn-outline-black" type="submit" style={{margin:"15px 0"}}>Add</button>
         </form>
       }}</Consumer>
 

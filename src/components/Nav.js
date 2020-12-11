@@ -16,7 +16,7 @@ class Nav extends React.Component {
                             <Link to="/todo" style={{textDecoration:"none"}}>Todo List</Link>
                             <Link to="/expense" style={{textDecoration:"none"}}>Expense Tracker</Link>
                             <Link to="/pomodoro" style={{textDecoration:"none"}}>Pomodoro</Link>
-                            <Link to="/settings" style={{textDecoration:"none"}}>Settings</Link>
+                            {/* <Link to="/settings" style={{textDecoration:"none"}}>Settings</Link> */}
                     </div>
                 </ul>
             </header>

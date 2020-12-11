@@ -31,6 +31,7 @@ export const AddTransaction = () => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Enter text..."
+          required
         />
         <label htmlFor="amount" class="tracker">
           Amount <br />
@@ -41,8 +42,9 @@ export const AddTransaction = () => {
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
           placeholder="Enter amount..."
+          required
         />
-        <button className="btn">Add transaction</button>
+        <button className="clic" style={{margin:"40px 0 0 0"}}>Add transaction</button>
       </form>
     </>
   );
